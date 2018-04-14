@@ -33,3 +33,4 @@ Side stuff
 AWS SNS:
 This is used to create an SNS and had myself subscribe to it. Used this in order for the CodePipeline to message me on the deployment states of my epplication and where in the CI job we are.
  
+ -Dom
