@@ -3,7 +3,7 @@ phases:
   install:
     commands:
         - apt-get update
-        - apt-get install httpd -y
+        - apt-get install -y httpd
         - service httpd start
   pre_build:
     commands:
