@@ -11,8 +11,3 @@ phases:
     commands:
   post_build:
     commands:
-artifacts:
-  files:
-  discard-paths: yes
-cache:
-  paths:
