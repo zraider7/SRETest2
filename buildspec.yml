@@ -4,7 +4,8 @@ phases:
     commands:
         - apt-get update
         - sudo apt install -y apache2
-        - service httpd start
+        - sudo service apache2 start
+        - chkconfig apache2 on
   pre_build:
     commands:
   build:
