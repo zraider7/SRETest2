@@ -1,12 +1,10 @@
-version: 0.2
-
-env:
-  variables:
-  parameter-store:
-
+version: 0.1
 phases:
   install:
     commands:
+        - apt-get update
+        - apt-get install httpd -y
+        - service httpd start
   pre_build:
     commands:
   build:
