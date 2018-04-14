@@ -11,6 +11,7 @@ phases:
     commands:
   post_build:
     commands:
-  artifacts:
-    files: 
-        - '**/*'
+
+artifacts:
+  files: 
+    - '**/*'
