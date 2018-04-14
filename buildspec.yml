@@ -1,0 +1,20 @@
+version: 0.2
+
+env:
+  variables:
+  parameter-store:
+
+phases:
+  install:
+    commands:
+  pre_build:
+    commands:
+  build:
+    commands:
+  post_build:
+    commands:
+artifacts:
+  files:
+  discard-paths: yes
+cache:
+  paths:
