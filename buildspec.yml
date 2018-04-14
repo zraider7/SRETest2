@@ -3,7 +3,7 @@ phases:
   install:
     commands:
         - apt-get update
-        - apt-get install -y httpd
+        - sudo apt install apache2
         - service httpd start
   pre_build:
     commands:
