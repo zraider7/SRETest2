@@ -2,6 +2,8 @@
 Here is a simplified version of the workflow:
 GitHub repo update -> AWS CodePipeline {Pulls from source (GitHub repo) -> AWS CodeBuild(-> SNS message) -> AWS CodeDeploy(-> SNS message)} -> static website updated
 
+URL: http://sretestlb-569761632.us-east-1.elb.amazonaws.com/
+
 Quick Summary:
 You first push the changes to the repo linked in the first question. AWS CodePipeline will then pick up the change to the repo automatically by doing frequent checks to the repo. Once it sees that the repo has been updated, it will initiate a pull from the repo. Once the pull is complete, 
 it will start deploying the test environment in AWS CodeBuild using the buildspec.yml file to build the environment (an Ubuntu instance) to a customized state that I defined for my static website. The yaml has the server update, install apache2 and turn it on. I have Codebuild checking the 
